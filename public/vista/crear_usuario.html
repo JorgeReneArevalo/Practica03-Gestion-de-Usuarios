@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!--
+    Programación Hypermedial
+    Ingeniería de Sistemas
+    Séptimo Ciclo
+    
+    Author: Jorge Arévalo
+    Date: 23/04/2019  
+
+    Filename: envio.html
+   -->
+
+    <meta charset="utf-8" />
+    <title>PHP</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header class="cab">
+        <h1> Creación de nuevos usuarios </h1>
+    </header>
+    <section>
+        <form method="POST" action="../controladores/crear_usuario.php">
+            <label>Cédula:</label>
+            <input name="cedula" placeholder="Número de Cédula" required>
+            <label>Nombres:</label>
+            <input name="nombres" placeholder="Ingrese sus Nombres" required>
+            <label>Apellidos:</label>
+            <input name="apellidos" placeholder="Ingrese sus Apellidos" required>
+            <label>Dirección:</label>
+            <input name="direccion" placeholder="Ingrese la direccion" required>
+            <label>Teléfono:</label>
+            <input name="telefono" placeholder="Ingrese el numero de telefono" required>
+            <label>Correo Electrónico:</label>
+            <input name="correo" type="email" placeholder="ingrese el Correo" required>
+            <label>Password:</label>
+            <input name="contraseña" type="password" placeholder="Ingrese el password" required >
+            <label>Fecha de Nacimiento:</label>
+            <input name="fechaNacimiento" type="date" placeholder="23/04/1982" required>
+            <button id="button" type="submit"> Guardar </button>
+            <button id="button" type="reset"> Cancelar </button>
+        </form>
+    </section>
+</body>
+
+</html>

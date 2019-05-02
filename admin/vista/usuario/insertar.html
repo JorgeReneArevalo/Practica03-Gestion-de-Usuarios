@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!--
+    Programación Hypermedial
+    Ingeniería de Sistemas
+    Séptimo Ciclo
+    
+    Author: Jorge Arévalo
+    Date: 23/04/2019  
+
+    Filename: envio.html
+   -->
+
+    <meta charset="utf-8" />
+    <title>PHP</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header class="cab">
+        <h1>Sistema de Gestión de Personas</h1>
+    </header>
+    <section>
+        <form method="POST" action="../../controladores/persona/insertarDatos.php">
+            <label>Código:</label>
+            <input name="codigo" placeholder="Código" required >
+            <label>Cédula:</label>
+            <input name="cedula" placeholder="Número de Cédula" required>
+            <label>Nombre:</label>
+            <input name="nombres" placeholder="Nombres" >
+            <label>Apellido:</label>
+            <input name="apellidos" placeholder="Apellidos" >
+            <label>Dirección:</label>
+            <input name="direccion" placeholder="Ingrese la direccion" >
+            <label>Teléfono:</label>
+            <input name="telefono" placeholder="Ingrese el numero de telefono" >
+            <label>Correo Electrónico:</label>
+            <input name="correo" type="email" placeholder="ingrese el Correo" >
+            <label>Password:</label>
+            <input name="contraseña" type="password" placeholder="Ingrese el password" >
+            <label>Fecha de Nacimiento:</label>
+            <input name="fechaNacimiento" type="date" placeholder="23/04/1982" >
+            <button id="button" type="submit"> Guardar </button>
+            <button id="button"> Cancelar </button>
+        </form>
+    </section>
+</body>
+
+</html>
